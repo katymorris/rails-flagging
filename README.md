@@ -12,7 +12,7 @@ Virtual Box allows you to see all of the boxes you currently have open and manag
 
 Vagrant uses the command line ssh in and out of your box, and also manage boxes.
 
-The Getty's box runs in an Ubuntu/Xenial environment.
+This project runs in an Ubuntu/Xenial environment.
 
 Next, use the command line to enter the root directory of the Getty's file (where VagrantFile and app are stored).
 
