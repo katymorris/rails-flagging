@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'%>
+    <%= stylesheet_link_tag    'sb-admin.min.css', media: 'all' %>
+    <%= stylesheet_link_tag    "admin.css", :media => "all" %>
+    
+    <%= javascript_include_tag   'application', "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/popper.min.js", media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag   "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" %>
+    <%= javascript_include_tag   "sb-admin-datatables.min.js" %>
+    <%= javascript_include_tag   "sb-admin.min.js" %>
+    
+    <%= yield :head %>
+  </head>
+
+  <body>
+     <%= render :partial => 'application/admin_navigation' %>
+    <div class="content-wrapper">
+      <div class="container-fluid">
+        <%= yield %>
+      </div>
+  </body>
+</html>

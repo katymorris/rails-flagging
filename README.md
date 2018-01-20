@@ -19,18 +19,8 @@ Next, use the command line to enter the root directory of the Getty's file (wher
 * -vagrant up
 * -vagrant ssh
 
-Now you will be inside your box through the command line. Next we will navigate to the main Rails directory:
-
-* -cd ..
-* -cd vagrant
-* -cd app
-
-then run:
-
-* bash vagrant-setup/install-react.sh
-
 Now start the server:
 
 * rails s -b 0.0.0.0
 
-Go to http://192.168.33.30:3000/hello_world and you should see the hello world sample.
+Go to http://192.168.33.30:3000/

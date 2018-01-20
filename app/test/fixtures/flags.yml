@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reason: MyString
+  action_edited: false
+  action_deleted: false
+  action_contacted: false
+  action_banned: false
+  resolved: false
+  notes: MyText
+
+two:
+  reason: MyString
+  action_edited: false
+  action_deleted: false
+  action_contacted: false
+  action_banned: false
+  resolved: false
+  notes: MyText

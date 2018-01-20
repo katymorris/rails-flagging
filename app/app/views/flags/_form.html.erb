@@ -1,0 +1,52 @@
+<%= form_with(model: flag, local: true) do |form| %>
+  <% if flag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(flag.errors.count, "error") %> prohibited this flag from being saved:</h2>
+
+      <ul>
+      <% flag.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :reason %>
+    <%= form.text_field :reason, id: :flag_reason %>
+  </div>
+
+  <div class="field">
+    <%= form.label :action_edited %>
+    <%= form.check_box :action_edited, id: :flag_action_edited %>
+  </div>
+
+  <div class="field">
+    <%= form.label :action_deleted %>
+    <%= form.check_box :action_deleted, id: :flag_action_deleted %>
+  </div>
+
+  <div class="field">
+    <%= form.label :action_contacted %>
+    <%= form.check_box :action_contacted, id: :flag_action_contacted %>
+  </div>
+
+  <div class="field">
+    <%= form.label :action_banned %>
+    <%= form.check_box :action_banned, id: :flag_action_banned %>
+  </div>
+
+  <div class="field">
+    <%= form.label :resolved %>
+    <%= form.check_box :resolved, id: :flag_resolved %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notes %>
+    <%= form.text_area :notes, id: :flag_notes %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
